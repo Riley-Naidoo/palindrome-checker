@@ -1,0 +1,66 @@
+        /* Custom Styles */
+        body {
+            background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient background */
+            color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 40px;
+            width: 100%;
+            max-width: 600px;
+        }
+        #text-input {
+            border-radius: 25px;
+            padding: 10px 15px;
+            font-size: 1.1rem;
+            border: 2px solid #007bff;
+            box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        #text-input:focus {
+            border-color: #0056b3;
+            box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
+            outline: none;
+        }
+        #check-btn {
+            border-radius: 25px;
+            padding: 10px 20px;
+            font-size: 1.1rem;
+            background-color: #007bff; /* Default button color */
+            border: none;
+            color: #fff;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        #check-btn:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+        #check-btn:active {
+            background-color: #0056b3; /* Darker button color on click */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) inset;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 1.25rem;
+            font-weight: bold;
+            transition: opacity 0.5s ease;
+            color: black;
+        }
+        /* Animation for result */
+        .fade-in {
+            opacity: 1;
+        }
+        .palindrome {
+            color: #28a745; /* Bootstrap's success color */
+        }
+        .not-palindrome {
+            color: #dc3545; /* Bootstrap's danger color */
+        }
